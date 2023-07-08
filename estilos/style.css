@@ -10,3 +10,57 @@ cor3: #f2f1f7
 cor4: #132a32
 cor5: #03141e
 */
+
+* {
+    font-family: 'Poppins', 'sans-serif';
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --cor1: #f67c00;
+    --cor2: #8f2517;
+    --cor3: #f2f1f7;
+    --cor4: #132a32;
+    --cor5: #03141e;
+}
+
+html, body {
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--cor1);
+}
+
+main {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+section#login {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+
+    background-color: var(--cor3);
+    width: 250px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.650);
+}
+
+section#login > div#imagem {
+    display: block;
+    background: var(--cor1) url('../imagens/pedrios.jpg') no-repeat;
+    background-size: cover;
+    background-position: center top;
+    height: 200px;
+}
+
+section#login > div#formulario {
+    display: block;
+    padding: 10px;
+}
